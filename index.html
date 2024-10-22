@@ -5,40 +5,47 @@
     <title>Contact Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body style="display: flex; align-items: center;">
     <!-- this is html page for contact form-->
-    <form action="action_page.php" method="post">
-        <div>
-            <label for="Fname">Your name</label>
+     <main style="margin: 30px; background-color: rgb(49, 19, 19);">
+        <form action="action_page.php" method="post">
+            <div>
+                <label for="Fname">Your name</label>
+                <br>
+                <input type="text" id="Fname" name="Fname" placeholder="Enter your name" required>
+            </div>
+    
             <br>
-            <input type="text" id="Fname" name="Fname" placeholder="Enter your name" required>
-        </div>
-
-        <br>
-
-        <div>
-            <label for="Email">Your Email</label>
+    
+            <div>
+                <label for="Email">Your Email</label>
+                <br>
+                <input type="Email" id="Email" name="Email" placeholder="Enter your email address" required>
+            </div>
+    
             <br>
-            <input type="Email" id="Email" name="Email" placeholder="Enter your email address" required>
-        </div>
-
-        <br>
-
-        <div>
-            <label for="EMsg">Your Message</label>
+    
+            <div>
+                <label for="EMsg">Your Message</label>
+                <br>
+                <Textarea  id="EMsg" name="EMsg" cols="30" rows="10" placeholder="Type your message here">
+    
+                </Textarea>
+            </div>
+    
             <br>
-            <input type="Textarea" id="EMsg" name="EMsg" placeholder="Type your message here" required>
-        </div>
+    
+            <div>
+                <label>Send message</label>
+                <br>
+                <input type="submit"> 
+            </div>
+            
+    
+        </form>
 
-        <br>
-
-        <div>
-            <label>Send message</label>
-            <br>
-            <input type="submit"> 
-        </div>
-
-    </form>
+     </main>
+    
         
 </body>
 </html>
